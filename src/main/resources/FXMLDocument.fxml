@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="392.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="repaso.generic.fx.FXMLDocumentController">
+   <children>
+      <ComboBox fx:id="cmbAlumnos" layoutX="37.0" layoutY="26.0" prefHeight="26.0" prefWidth="451.0" />
+      <Button layoutX="537.0" layoutY="26.0" mnemonicParsing="false" onAction="#Aceptar" prefHeight="26.0" prefWidth="143.0" text="Aceptar" />
+      <TableView fx:id="tblAlumnos" layoutX="37.0" layoutY="88.0" prefHeight="200.0" prefWidth="643.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="537.0" layoutY="306.0" mnemonicParsing="false" onAction="#Aceptar2" prefHeight="26.0" prefWidth="143.0" text="Aceptar" />
+   </children>
+</AnchorPane>

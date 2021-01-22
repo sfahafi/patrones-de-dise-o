@@ -1,0 +1,26 @@
+Repasar
+    - Reflection
+    - Recursividad
+    - Herencia y Polimorfismo
+    - Frameworks Collection
+
+Patrones
+1 - Singleton
+2 - Factory
+3 - Abstract Factory
+4 - Builder
+5 - Prototype
+6 - MVC
+7 - Proxy
+8 - Adaptor
+9 - Facade (Fachada)
+10 - Bridge (Puente)
+11- Composite (Compuesto)
+12- Decorator
+13- Observer (Observador)
+14- Chain of responsibility (Cadena de responsabilidad)
+15- State (Estado)
+16- Stategy (Estrategia)
+17- Memento
+18- Template Method (Método Plantilla)
+19- Iterator (Iterador)

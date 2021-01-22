@@ -1,0 +1,18 @@
+Juego de Marcianos.
+- Crear la clase Singleton que sera llamada desde 3 clases diferentes, se podrá ver 
+  la utilidad de tener un solo objeto que controle la cantidad de marcianos que falta 
+  por destruir.
+
+- Hay u grupo de desarrolladores de diferentes partes del mundo. Se les ha encargado 
+  desarrollar el juego. son Argentinos crean la clase Marcianos, los desarrolladores 
+  Colombianos crean la clase jugador, y los Mexicanos crean la clase Computador.
+
+- La clase Marcianos se va a instanciar una unica vez y crea 10 marcianos 
+  (atributo cantidad=10).
+
+- La clase Jugador debe derribar la mayor cantidad de marcianos posibles.
+
+- La clase Computador va a crear Marcianos cada vez que el jugador dispare.
+
+Nota: La importancia de este patron es que se llama a la clase Singleton 
+        desde muchas otras clases y su estado es unico.

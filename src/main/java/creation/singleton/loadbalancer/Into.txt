@@ -1,0 +1,6 @@
+Supongamos que un servidor que entrega direcciones IP aleatorias con el
+proposito de balancear cargas y recibe miles de peticiones por segundo.
+Debe asegurar que en el momento de la creación del primer objeto singleton no
+exista otro hilo en paralelo que lo este creando simultaneamente.
+Basandose en que la creación del primer object no es inmediata debido a demora
+de factores externos (I/O, Base de datos, etc)

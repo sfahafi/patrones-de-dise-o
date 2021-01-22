@@ -1,0 +1,45 @@
+Patrones estructurales (Structural patterns)
+
+Son los patrones de diseño software que solucionan problemas de composición 
+(agregación) de clases y objetos:
+
+    Adapter o Wrapper (Adaptador o Envoltorio): 
+        Adapta una interfaz para que pueda ser utilizada por una clase que de 
+        otro modo no podría utilizarla.
+        Adapta Objetos para que puedan ser usados en distintos ambientes.
+        Hay casos en que tenemos objetos que no podemos modificar pero que
+        necesitamos implementar en nuestro sistema.
+        Ejemplo tenemos una clase con el campo nombre="Juan Perez" y otra clase
+        con el campo nombre y apellido. necesitamos de un adaptador.
+        Sirve para adaptar Apis que son cambiantes y mantener de esta forma cierta
+        estabilidad en nuestro proyecto.
+
+    Bridge (Puente): 
+        Desacopla una abstracción de su implementación.
+    
+    Composite (Objeto compuesto): 
+        Permite tratar objetos compuestos como si de uno simple se tratase.
+    
+    Decorator (Decorador): 
+        Añade funcionalidad a una clase dinámicamente.
+
+    Facade (Fachada): 
+        Provee de una interfaz unificada simple para acceder a una interfaz o 
+        grupo de interfaces de un subsistema.
+        Ejemplo Evento CargarVenta() puede tener muchos items, controles y transacciones.
+        pero se ejecuta un solo método. Evita que el usuario conosco lo complejo del sistema.
+
+
+    Flyweight (Peso ligero): 
+        Reduce la redundancia cuando gran cantidad de objetos poseen idéntica 
+        información.
+
+    Proxy: 
+        Mantiene un representante de un objeto. Se usa cuando se tiene un
+        objeto en forma remota y se necesita una copia local para manipular.
+
+    Módulo: 
+        Agrupa varios elementos relacionados, como clases, singletons, y 
+        métodos, utilizados globalmente, en una entidad única.
+
+

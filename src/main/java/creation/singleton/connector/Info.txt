@@ -1,0 +1,14 @@
+El Connector jdbc 1 - trabaja sin singleton.
+El Connector jdbc 2 - trabaja con singleton.
+
+Correr el test con uno y con otro conector y monitorear las conecciones en 
+workbench.
+
+Con un for correr 1000 ciclos y testar puertos tiempos y rebotados
+
+No puedo usar Interfaces y Polimorfismo debido que se tienen métodos statics
+
+Normalmente no se justica el uso de sincronismo dado que los clientes suelen
+ser del tipo back y son pocos.
+
+ 

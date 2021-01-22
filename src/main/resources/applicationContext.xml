@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+">
+    <!-- A partir de la verión 3 se pueden usar Annotations, pero no son validas
+    para objetos no declarados todavia -->
+    <!-- Se crea un objeto del tipo connector y se pasan los parametros al constructor -->
+    <bean name="connector" class="creation.singleton.connector.injection.Connector" >
+        <constructor-arg value="com.mysql.cj.jdbc.Driver" />
+        <constructor-arg value="jdbc:mysql://localhost/test" />
+        <constructor-arg value="root" />
+        <constructor-arg value="" />
+    </bean>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <bean name="factory" class="creation.factory.InheritedFactory" />
+    
+    <bean id="test" class="creation.builder.aop.TestAop" />
+    
+    <bean id="interceptor" class="creation.builder.aop.interceptors.Interceptor" />
+    
+    <bean id="testServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+
+        <property name="target" ref="test"/>
+
+        <property name="interceptorNames">
+            <list>
+                <value>interceptor</value>
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="robot" class="creation.builder.aop.Robot" />
+    
+    <bean id="builder" class="creation.builder.aop.Builder" />
+    
+    <bean id="robotHamburguesa" class="creation.builder.aop.robots.RobotHamburguesa" />
+   
+    <bean id="robotHotDog" class="creation.builder.aop.robots.RobotHotDog" />
+    
+    <!-- <bean id="interceptor" class="creation.builder.aop.interceptors.Interceptor" /> -->
+   
+    <bean id="builderServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+
+        <property name="target" ref="builder"/>
+
+        <property name="interceptorNames">
+            <list>
+                <value>interceptor</value>
+            </list>
+        </property>
+    </bean>
+    
+    <!--
+    <bean id="robotServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+
+        <property name="target" ref="robot"/>
+
+        <property name="interceptorNames">
+            <list>
+                <value>interceptor</value>
+            </list>
+        </property>
+    </bean>
+    -->
+    <bean id="robotHamburguesaServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+
+        <property name="target" ref="robotHamburguesa"/>
+
+        <property name="interceptorNames">
+            <list>
+                <value>interceptor</value>
+            </list>
+        </property>
+    </bean>
+    <bean id="robotHotDogServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+
+        <property name="target" ref="robotHotDog"/>
+
+        <property name="interceptorNames">
+            <list>
+                <value>interceptor</value>
+            </list>
+        </property>
+    </bean>
+    
+    <bean id="entidad" class="repaso.aop.Entidad"/>
+    <bean id="interceptorE" class="repaso.aop.InterceptorEntity"/>
+    <bean id="entidadServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target" ref="entidad"/>
+        <property name="interceptorNames">
+            <list><value>interceptorE</value></list>
+        </property>
+    </bean>
+    
+</beans>

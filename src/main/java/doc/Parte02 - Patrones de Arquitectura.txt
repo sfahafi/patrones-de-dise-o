@@ -1,0 +1,63 @@
+Patrones de arquitectura
+
+Los patrones arquitectónicos, o patrones de arquitectura, también llamados 
+arquetipos ofrecen soluciones a problemas de arquitectura de software en 
+ingeniería de software. Dan una descripción de los elementos y el tipo de 
+relación que tienen junto con un conjunto de restricciones sobre cómo pueden ser 
+usados. Un patrón arquitectónico expresa un esquema de organización estructural 
+esencial para un sistema de software, que consta de subsistemas, sus 
+responsabilidades e interrelaciones. En comparación con los patrones de diseño, 
+los patrones arquitectónicos tienen un nivel de abstracción mayor.
+
+Aunque un patrón arquitectónico comunica una imagen de un sistema, no es una 
+arquitectura como tal. Un patrón arquitectónico es más un concepto que captura 
+elementos esenciales de una arquitectura de software. Muchas arquitecturas 
+diferentes pueden implementar el mismo patrón y por lo tanto compartir las 
+mismas características. Además, los patrones son a menudo definidos como una 
+cosa estrictamente descrita y comúnmente disponible. Por ejemplo, la 
+arquitectura en capas es un estilo de llamamiento-y-regreso, cuando define uno 
+un estilo general para interaccionar. Cuando esto es descrito estrictamente y 
+comúnmente disponible, es un patrón.
+
+Uno de los aspectos más importantes de los patrones arquitectónicos es que 
+encarnan diferentes atributos de calidad. Por ejemplo, algunos patrones 
+representan soluciones a problemas de rendimiento y otros pueden ser utilizados 
+con éxito en sistemas de alta disponibilidad. A primeros de la fase de diseño, 
+un arquitecto de software escoge qué patrones arquitectónicos mejor ofrecen las 
+calidades deseadas para el sistema.
+
+Ejemplos de patrones arquitectónicos incluyen los siguientes:
+
+Programación por capas
+Tres niveles
+Pipeline
+Invocación implícita
+Arquitectura en pizarra
+Arquitectura dirigida por eventos, Presentación-abstracción-control
+Peer-to-peer
+Arquitectura orientada a servicios
+Objetos desnudos
+Modelo Vista Controlador
+
+
+Dominios en el diseño de Patrones.
+
+Control de acceso. Hay muchas situaciones en las cuales el acceso a datos, 
+características y funcionalidad son limitadas a la definición de los usuarios. 
+Desde un punto de vista arquitectónico, acceder a determinadas partes del 
+software debe tener un riguroso control.
+
+Concurrencia. Muchas aplicaciones deben manejar múltiples tareas de forma que 
+simule el paralelismo. Hay muchas formas de manejar esta concurrencia y cada una 
+puede ser presentada por un patrón arquitectónico diferente.
+
+Distribución. El problema de distribución dirige el problema de forma en que los 
+sistemas o componentes se comunican con otros en un entorno distribuido. El 
+patrón más común para afrontar el problema es the broker. Actuando como un 
+middleman entre el componente cliente y el servidor. El cliente envía un mensaje 
+al broker y éste se encarga de completar la conexión.
+
+Persistencia. Los datos persistentes son almacenados en bases de datos o 
+archivos y pueden ser leídos o modificados por otros procesos más adelante. En 
+los entornos orientados a objetos esto va más allá y lo que puede ser accedido o 
+modificable son las propiedades de los objetos.
